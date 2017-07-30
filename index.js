@@ -1,1 +1,1 @@
-module.exports = require('./lib/airsonos');
+module.exports = require("./lib/airsonos");
