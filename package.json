@@ -11,7 +11,7 @@
   ],
   "scripts": {
     "start": "babel-node ./lib/index.js",
-    "test": "jscs .",
+    "test": "./node_modules/.bin/eslint --config .eslintrc ./lib/*.js",
     "prepublish": "babel ./lib/ -d ./bin/"
   },
   "bin": "./bin/index.js",
@@ -22,14 +22,20 @@
   "dependencies": {
     "babel": "^5.8.21",
     "bluebird": "^2.9.34",
+    "eslint": "^4.3.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-config-prettier": "^2.3.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-prettier": "^2.1.2",
+    "eslint-plugin-react": "^7.1.0",
     "flags": "~0.1.2",
     "ip": "1.1.0",
     "nicercast": "git://github.com/tomodwyer/nicercast.git",
     "nodetunes": "git://github.com/tomodwyer/nodetunes.git#1.0.0",
+    "prettier-eslint": "^6.4.2",
+    "prettier": "^1.5.3",
     "sonos": "git://github.com/stephen/node-sonos.git#stephen-1.0.0"
   },
-  "license": "MIT",
-  "devDependencies": {
-    "jscs": "^2.1.0"
-  }
+  "license": "MIT"
 }
