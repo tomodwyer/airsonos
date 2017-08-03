@@ -2,6 +2,11 @@
 
 ## 1.0.0
 
+- Update the dependencies
+- Fix all ESLint auto-fix problems
+- Replace JSCS with ESLint and Prettier
+- Use @tomodwyer versions of Nodetunes and Nicercast
+
 ## 0.2.4
 - Added support for node 4.0.0
 - Re-added warning for ALAC device usage
