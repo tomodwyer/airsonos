@@ -1,28 +1,24 @@
-AirSonos
-========
+# AirSonos
 
 AirSonos is a server that adds Apple [AirPlay](https://www.apple.com/airplay/) (iOS, OS X) support to all Sonos devices on a network.
 
-[Blog post for further reading](https://medium.com/@stephencwan/hacking-airplay-into-sonos-93a41a1fcfbb)
+## Installation
 
-Questions? Feel free to ping [@stephencwan](https://twitter.com/stephencwan)
+AirSonos requires [node.js](http://nodejs.org) installed to run.
 
-Installation
-------------
+Currently tested against Node v8.2.1 and npm v5.3.0.
 
-AirSonos requires [node.js](http://nodejs.org) >= v0.10.33 installed to run.
-
-Install via [npm](https://www.npmjs.org)
 ```
-$ npm install airsonos -g
+$ git clone https://github.com/tomodwyer/airsonos.git
+$ npm install
+$ npm run start
 ```
 
-Platform-specific install note available from [`INSTALL.md`](https://github.com/stephen/airsonos/blob/master/INSTALL.md)
+## Example usage
 
-Example usage
--------------
-```
-$ airsonos
+```bash
+$ cd airsonos
+$ npm run start
 Searching for Sonos devices on network...
 
 Swan (@ 192.168.0.1:1400, RINCON_B8E9375433D201400:1)
@@ -30,18 +26,17 @@ Swan (@ 192.168.0.1:1400, RINCON_B8E9375433D201400:1)
 Search complete. Set up 1 device tunnel.
 ```
 
-Development
------------
-```
+## Development
+
+```bash
 $ git clone https://github.com/stephen/airsonos.git
 $ cd airsonos
 $ npm install
 $ node ./bin/index.js
 ```
 
-Internally, AirSonos is a thin wrapper around the [nodetunes](https://github.com/stephen/nodetunes) and [nicercast](https://github.com/stephen/nicercast) packages.
+Internally, AirSonos is a thin wrapper around the [nodetunes](https://github.com/tomodwyer/nodetunes) and [nicercast](https://github.com/tomodwyer/nicercast) packages.
 
-Changelog
----------
+## Changelog
 
-See [`CHANGELOG.md`](https://github.com/stephen/airsonos/blob/master/CHANGELOG.md)
+See [`CHANGELOG.md`](https://github.com/tomodwyer/airsonos/blob/master/CHANGELOG.md)
