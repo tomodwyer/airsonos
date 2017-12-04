@@ -35,8 +35,8 @@
     "eslint-plugin-react": "^7.4.0",
     "flags": "~0.1.2",
     "ip": "1.1.5",
-    "nicercast": "git://github.com/tomodwyer/nicercast.git",
-    "nodetunes": "git://github.com/tomodwyer/nodetunes.git#1.0.1",
+    "nicercast": "git://github.com/tomodwyer/nicercast.git#0.2.0",
+    "nodetunes": "git://github.com/tomodwyer/nodetunes.git#1.1.1",
     "prettier": "^1.7.4",
     "sonos": "git://github.com/stephen/node-sonos.git#stephen-1.0.0"
   },
