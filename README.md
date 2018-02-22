@@ -2,23 +2,26 @@
 
 AirSonos is a server that adds Apple [AirPlay](https://www.apple.com/airplay/) (iOS, OS X) support to all Sonos devices on a network.
 
+## Prerequisites
+
+- [Node.js](https://nodejs.org/en/)
+- [Yarn](https://yarnpkg.com/en/)
+
+Currently tested against Node v8.9.4 and Yarn v1.3.2
+
 ## Installation
-
-AirSonos requires [node.js](http://nodejs.org) installed to run.
-
-Currently tested against Node v8.2.1 and npm v5.3.0.
 
 ```
 $ git clone https://github.com/tomodwyer/airsonos.git
-$ npm install
-$ npm run start
+$ yarn
+$ yarn start
 ```
 
 ## Example usage
 
 ```bash
 $ cd airsonos
-$ npm run start
+$ yarn start
 Searching for Sonos devices on network...
 
 Swan (@ 192.168.0.1:1400, RINCON_B8E9375433D201400:1)
@@ -31,7 +34,7 @@ Search complete. Set up 1 device tunnel.
 ```bash
 $ git clone https://github.com/stephen/airsonos.git
 $ cd airsonos
-$ npm install
+$ yarn
 $ node ./bin/index.js
 ```
 
