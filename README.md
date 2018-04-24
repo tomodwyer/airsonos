@@ -4,8 +4,8 @@ AirSonos is a server that adds Apple [AirPlay](https://www.apple.com/airplay/) (
 
 ## Prerequisites
 
-- [Node.js](https://nodejs.org/en/)
-- [Yarn](https://yarnpkg.com/en/)
+* [Node.js](https://nodejs.org/en/)
+* [Yarn](https://yarnpkg.com/en/)
 
 Currently tested against Node v8.9.4 and Yarn v1.3.2
 
