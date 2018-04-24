@@ -49,7 +49,8 @@
     "plugins": ["prettier"],
     "rules": {
       "no-underscore-dangle": "off",
-      "prettier/prettier": "error"
+      "prettier/prettier": "error",
+      "no-console": "off"
     },
     "env": {
       "es6": true,
