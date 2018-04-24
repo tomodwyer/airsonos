@@ -43,5 +43,19 @@
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-react": "^7.7.0",
     "prettier": "^1.12.1"
-  }
+  },
+  "eslintConfig": {
+    "extends": ["airbnb", "prettier"],
+    "plugins": ["prettier"],
+    "rules": {
+      "no-underscore-dangle": "off",
+      "prettier/prettier": "error"
+    },
+    "env": {
+      "es6": true,
+      "node": true,
+      "mocha": true
+    }
+  },
+  "eslintIgnore": ["bin/*.js"]
 }
