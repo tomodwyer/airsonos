@@ -1,31 +1,40 @@
 {
   "name": "airsonos",
   "version": "1.1.0",
-  "author": "Stephen Wan <stephen@stephenwan.net>",
   "description": "AirTunes to Sonos devices",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tomodwyer/airsonos.git"
+  },
+  "author": "Stephen Wan <stephen@stephenwan.net>",
   "contributors": [
     {
       "name": "Stephen Wan",
       "email": "stephen@stephenwan.net"
     },
     {
-      "name": "Tom O'Dwyer"
+      "name": "Tom O'Dwyer",
+      "email": "git@tomodwyer.com"
     }
   ],
-  "scripts": {
-    "start": "babel-node ./lib/index.js",
-    "test": "eslint --config .eslintrc.json ./lib/*.js *.js",
-    "prepare": "babel ./lib/ -d ./bin/"
-  },
   "bin": "./bin/index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/stephen/airsonos.git"
+  "scripts": {
+    "lint": "eslint './*.js' './**/*.js'",
+    "prepare": "babel ./lib/ -d ./bin/",
+    "start": "babel-node ./lib/index.js"
   },
   "dependencies": {
     "babel-cli": "^6.24.1",
     "babel-polyfill": "^6.23.0",
     "bluebird": "^3.5.0",
+    "flags": "~0.1.2",
+    "ip": "1.1.5",
+    "nicercast": "git://github.com/tomodwyer/nicercast.git#0.2.0",
+    "nodetunes": "git://github.com/tomodwyer/nodetunes.git#1.1.1",
+    "sonos": "git://github.com/stephen/node-sonos.git#stephen-1.0.0"
+  },
+  "devDependencies": {
     "eslint": "^4.8.0",
     "eslint-config-airbnb": "^16.0.0",
     "eslint-config-prettier": "^2.6.0",
@@ -33,12 +42,6 @@
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-prettier": "^2.3.1",
     "eslint-plugin-react": "^7.4.0",
-    "flags": "~0.1.2",
-    "ip": "1.1.5",
-    "nicercast": "git://github.com/tomodwyer/nicercast.git#0.2.0",
-    "nodetunes": "git://github.com/tomodwyer/nodetunes.git#1.1.1",
-    "prettier": "^1.7.4",
-    "sonos": "git://github.com/stephen/node-sonos.git#stephen-1.0.0"
-  },
-  "license": "MIT"
+    "prettier": "^1.7.4"
+  }
 }
