@@ -32,7 +32,7 @@
     "ip": "1.1.5",
     "nicercast": "tomodwyer/nicercast#v0.3.0",
     "nodetunes": "tomodwyer/nodetunes#v1.2.0",
-    "sonos": "stephen/node-sonos#stephen-1.0.0"
+    "sonos": "npwalker/node-sonos#use_jens_maus_pr"
   },
   "devDependencies": {
     "eslint": "^4.19.1",
