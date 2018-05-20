@@ -1,6 +1,6 @@
 {
   "name": "airsonos",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "AirTunes to Sonos devices",
   "license": "MIT",
   "repository": {
@@ -45,8 +45,13 @@
     "prettier": "^1.12.1"
   },
   "eslintConfig": {
-    "extends": ["airbnb", "prettier"],
-    "plugins": ["prettier"],
+    "extends": [
+      "airbnb",
+      "prettier"
+    ],
+    "plugins": [
+      "prettier"
+    ],
     "rules": {
       "no-underscore-dangle": "off",
       "prettier/prettier": "error",
@@ -58,5 +63,7 @@
       "mocha": true
     }
   },
-  "eslintIgnore": ["bin/*.js"]
+  "eslintIgnore": [
+    "bin/*.js"
+  ]
 }
